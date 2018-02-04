@@ -1,4 +1,4 @@
-require 'rspec'
+puts 5
 
 def array_converter *arrays
   arrays.flatten.map(&:to_i)
