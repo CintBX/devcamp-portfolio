@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/CintBX/cintron_view_tool
+  revision: f02e301019ba80c67982ccb0d45885001ed962a0
+  specs:
+    cintron_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -211,6 +217,7 @@ DEPENDENCIES
   bootstrap (~> 4.1.3)
   byebug
   capybara (~> 2.13)
+  cintron_view_tool!
   coffee-rails (~> 4.2)
   devise (~> 4.4, >= 4.4.3)
   friendly_id (~> 5.1.0)
