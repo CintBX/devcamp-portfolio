@@ -48,9 +48,10 @@ body {
 /*
  * Header
  */
+
 .masthead {
   margin-bottom: 2rem;
-  width: 47rem;
+  width: 42rem;
 }
 
 .masthead-brand {
@@ -92,6 +93,7 @@ body {
 /*
  * Cover
  */
+
 .cover {
   padding: 0 1.5rem;
   text-align: center
@@ -105,10 +107,41 @@ body {
 /*
  * Footer
  */
+
 .mastfoot {
   color: rgba(255, 255, 255, .5);
 }
 
 p {
   text-align: center;
+}
+
+
+/*
+ * My Edits
+ */
+
+.my-fix {
+  text-align: center;
+}
+
+#my-p-fix {
+  font-size: 1.25rem;
+}
+
+#my-p-fix2 {
+  text-align: left;
+}
+
+
+/*
+ * Custom
+ */
+
+.card-body {
+  color: black;
+}
+
+.auth-links a {
+  color: black;
 }
