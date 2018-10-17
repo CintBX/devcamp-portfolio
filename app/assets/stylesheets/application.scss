@@ -41,7 +41,7 @@ body {
 }
 
 .cover-container {
-  max-width: 42em;
+  max-width: 65em;
 }
 
 
@@ -51,7 +51,9 @@ body {
 
 .masthead {
   margin-bottom: 2rem;
-  width: 43rem;
+  width: 55rem;
+  position: relative;
+  left: 63px;
 }
 
 .masthead-brand {
@@ -178,4 +180,21 @@ p {
 
 .app-footer {
   color: white;
+}
+
+.tech-news {
+  color: black;
+  margin: 20px;
+}
+
+.tech-news a {
+  color: green;
+}
+
+.tech-news > .card {
+  padding: 30px;
+}
+
+.tech-title {
+  margin-top: 15px;
 }
