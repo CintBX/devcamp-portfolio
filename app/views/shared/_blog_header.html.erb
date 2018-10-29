@@ -4,3 +4,11 @@
     <p class="new-header-sub">An example blog template built using Bootstrap.  Simplicity is perfection.</p>
   </div>
 </div>
+<span>
+	<%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>	
+</span>
+<span>
+	<%= link_to "Topics", topics_path %>
+</span>
+
+<hr>
