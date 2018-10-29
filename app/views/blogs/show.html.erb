@@ -1,9 +1,6 @@
 <main role="main" class="container">
 	<div class="row">
 	  <div class="col-md-8 blog-main">
-	    
-	    <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
-	    <hr>
 
 	    <h2><%= @blog.title %></h2>
 
