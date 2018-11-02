@@ -118,27 +118,13 @@ p {
   text-align: center;
 }
 
-
 /*
- * My Edits
+ * Custom
  */
-
-.my-fix {
-  text-align: center;
-}
-
-#my-p-fix {
-  font-size: 1.25rem;
-}
 
 #my-p-fix2 {
   text-align: left;
 }
-
-
-/*
- * Custom
- */
 
 .card-body {
   color: black;
@@ -197,4 +183,26 @@ p {
 
 .tech-title {
   margin-top: 15px;
+}
+
+.app-card-container {
+  color: black;
+}
+
+.app-card-container > .card {
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 20px;
+}
+
+#contact-page-headers {
+  margin-top: 30px;
+}
+
+.app-card-container a {
+  color: green;
+}
+
+.map-border {
+  border: 1px dotted grey;
 }
