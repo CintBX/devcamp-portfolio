@@ -13,7 +13,7 @@
   <div class="p-3">
     <h2 class="font-italic">Topics</h2>
     <% @side_bar_topics.each do |topic| %>
-      <p><%= link_to topic.title, topic_path(topic), class: 'btn btn-outline-primary btn-block' %></p>
+      <p><%= link_to topic.title, topic_path(topic), class: 'btn btn-outline-info btn-block btn-topic' %></p>
     <% end %>
   </div>
 

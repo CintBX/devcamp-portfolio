@@ -185,7 +185,21 @@ body {
   margin-top: 35px;
 }
 
-/* Float Shadow */
+.topic-bullet {
+  list-style-type: circle;
+}
+
+.topic-bullet > .topic {
+  font-size: 1.3em;
+}
+
+.btn-topic {
+  width: 85%;
+  font-size: 1.1em;
+}
+
+
+/* Float Shadow hover.css */
 .hvr-float-shadow {
   display: inline-block;
   vertical-align: middle;

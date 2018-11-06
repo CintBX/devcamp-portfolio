@@ -6,7 +6,7 @@
 
 	    <nav aria-label="breadcrumb">
 			  <ol class="breadcrumb">
-			    <li class="breadcrumb-item"><%= link_to 'Home', root_path %></li>
+			    <li class="breadcrumb-item"><%= link_to 'Blogs', blogs_path %></li>
 			    <li class="breadcrumb-item"><%= link_to @blog.topic.title, topic_path(@blog.topic) %></li>
 			    <li class="breadcrumb-item active" aria-current="page"><%= @blog.title %></li>
 
