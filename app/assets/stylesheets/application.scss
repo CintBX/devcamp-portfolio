@@ -213,10 +213,6 @@ p {
   color: green;
 }
 
-.map-border {
-  border: 1px dotted grey;
-}
-
 .card-block {
   margin-top: 7px;
   margin-bottom: 7px;
@@ -231,7 +227,11 @@ p {
   margin-bottom: 8px;
 }
 
-/* Pop */
+.home-style {
+  text-shadow: 0.4px 0.4px;
+}
+
+/* Pop hover.css */
 @-webkit-keyframes hvr-pop {
   50% {
     -webkit-transform: scale(1.2);
