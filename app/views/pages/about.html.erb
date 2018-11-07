@@ -4,34 +4,18 @@
 		<hr>
 		<div class="row">
 			<div class="col-md-3">
-				<%= image_tag "Me.jpg", width: 175, alt: "Profile Image", class: 'profile-img' %>
-				<div class="skills">
-					<% @skills.each do |skill| %>
-						<div class="skill">
-							<h4><%= skill.title %></h4>
-							<div class="progress">
-								<div 
-									class="progress-bar progress-bar-striped bg-success"
-									role="progressbar"
-									aria-valuenow="<%= skill.percent_utilized %>"
-									aria-valuemax="100"
-									style="width: <%= skill.percent_utilized %>%"
-								></div>
-							</div>
-						</div>
-					<% end %>
-				</div>
+				<%= image_tag "Me.jpg", width: 225, alt: "Profile Image", class: 'profile-img' %>				
 			</div>
 
 			<div class="col-md-9">				
-				<p>
+				<p class="align-left">
 					<br>
-					I am a proud father, a New York City native, and an enthusiastic student of Devcamp and Bottega.  I'm working hard to achieve my goals and learn more and more about Ruby on Rails development every day.
+					I am a proud father, a New York City native, and an avid student of Devcamp and Bottega.  I work hard every single day to become a highly proficient, professional software developer.
 					<br>
-					May my efforts be reflected in my work.
+					May my immense effort be reflected in this work.
 				</p>
 
-				<p id="collapse-buttons">
+				<p id="collapse-buttons" class="align-left">
 					<button
 						class="btn btn-primary"
 						type="button"
@@ -53,27 +37,92 @@
 					>
 						Education Experience
 					</button>
+
+					<button
+						class="btn btn-primary"
+						type="button"
+						data-toggle="collapse"
+						data-target="#personal"
+						aria-expanded="false"
+						aria-controller="personal"
+					>
+						Hobbies and Interests
+					</button>
 				</p>
 
 				<p>
-					<div class="collapse" id="jobHistory">
-						<div class="card card-block">
-							Job 1
+					<div class="collapse" id="jobHistory">						
+						<div class="card card-block align-left">
+							<span><b>Patient Transporter at BronxCare Hospital</b> <i>2008-2018</i></span>
+							<span class="about-descrip">
+								Transporting patients to and from treatment areas and operating rooms; lifting and assisting patients who have physical impairments, severe acute diseases and chronic illnesses; using wheelchairs, stretchers, oxygen tanks and similar equipment; responsible for promptly facilitating the flow of transportation.
+							</span>
 						</div>
-						<div class="card card-block">
-							Job 2
+
+						<div class="card card-block align-left">
+							<span><b>For-Hire-Vehicle Driver at Uber</b> <i>April 2018-present</i></span>
+							<span class="about-descrip">
+								Picking up clients and transporting them safely from one place to another; honing communication, professional courtesy, time management and safe driving skills.
+							</span>
 						</div>
 					</div>
 
-					<div class="collapse" id="education">
-						<div class="card card-block">
-							School 1
+					<div class="collapse" id="education">						
+						<div class="card card-block align-left">
+							<span><b>CUNY Bronx Community College</b> <i>2011-2015</i></span>
+							<span class="about-descrip">
+								Attained an Associate's Degree in Dietetics and Nutrition Science.								
+								<ul>
+									<li>Food Science</li>
+									<li>Anatomy and Physiology</li>
+									<li>Disease Prevention</li>
+								</ul>
+							</span>
 						</div>
-						<div class="card card-block">
-							School 2
+
+						<div class="card card-block align-left">
+							<span><b>CUNY Lehman College</b> <i>2016-2017</i></span>
+							<span class="about-descrip">
+								Maintained an above-average GPA while pursuing a Bachelor's in Health Education and Promotion.								
+								<ul>
+									<li>Health Counseling</li>
+									<li>Statistical Computation</li>
+									<li>Research Methods and Epidemiology</li>
+								</ul>
+							</span>
 						</div>
-						<div class="card card-block">
-							School 3
+
+						<div class="card card-block align-left">
+							<span><b>Devcamp</b> <i>2017-Present</i></span>
+							<span class="about-descrip">
+								Building a professional portfolio application which utilizes a variety of advanced functionality to deliver a sleek, user-friendly experience.
+								<ul>
+									<li>HTML/CSS/JavaScript</li>
+									<li>Ruby Model-View-Controller Architecture</li>
+									<li>Rails best practices</li>
+								</ul>
+							</span>
+						</div>						
+					</div>
+
+					<div class="collapse" id="personal">						
+						<div class="card card-block align-left">							
+							Software Programming								
+						</div>
+					</div>
+					<div class="collapse" id="personal">
+						<div class="card card-block align-left">
+							Reading and Writing
+						</div>
+					</div>
+					<div class="collapse" id="personal">
+						<div class="card card-block align-left">
+							Martial Arts and Fitness
+						</div>
+					</div>
+					<div class="collapse" id="personal">
+						<div class="card card-block align-left">
+							Daily Meditation
 						</div>
 					</div>
 				</p>
