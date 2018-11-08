@@ -124,10 +124,6 @@ h6, .h6 {
   color: rgba(255, 255, 255, .5);
 }
 
-p {
-  text-align: center;
-}
-
 /*
  * Custom
  */
@@ -176,6 +172,7 @@ p {
 
 .app-footer {
   color: white;
+  text-align: center;
 }
 
 .tech-news {
@@ -227,7 +224,7 @@ p {
   margin-bottom: 8px;
 }
 
-.home-style {
+.txt-shadow {
   text-shadow: 0.4px 0.4px;
 }
 
