@@ -31,6 +31,10 @@
   max-width: 40rem;
 }
 
+body {
+  font-family: 'Arvo', serif;
+}
+
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -44,4 +48,17 @@ footer p {
 
 .portfolio-container {
   padding-top: 30px;
+}
+
+.port-sidebar-source {
+  margin: auto;
+  text-align: center;
+  width: 90%;
+  margin-top: -20px;
+  font-size: 1.1em;
+}
+
+.port-create-btn a:hover {
+  text-decoration: none;
+  color: white;
 }

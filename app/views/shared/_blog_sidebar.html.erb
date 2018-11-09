@@ -1,21 +1,28 @@
 <aside class="col-md-4 blog-sidebar">
   <div class="p-3 mb-3 bg-light rounded">
-    <h4 class="font-italic">More about me</h4>
+    <h2 class="font-italic">More about me</h2>
     <p class="mb-0">
-      I am Latino-American and 30 years of age.<br>  I was born and raised in the Bronx, and I am the youngest of 6 children.<br>  My interests are meditation, spirituality, philosophy, and physical fitness.<br>
-      Each of my interests are connected by what I enjoy the most;<br>
-      Learning, growing, and improving.
+      I am Latino-American and 30 years of age.<br>  I was born and raised in the Bronx, and I am the youngest of 6 children.<br>  My interests are studying, spirituality, and martial arts.<br>
+      Each of these interests are connected by one overarching philosophy;<br>
+      Learn, grow, and improve.
     </p>
+  </div>
+  
+  <%= source_helper("alert alert-success blog-sidebar-source") %>  
+
+  <div class="p-3">
+    <h2 class="font-italic">Topics</h2>
+    <% @side_bar_topics.each do |topic| %>
+      <p><%= link_to topic.title, topic_path(topic), class: 'btn btn-outline-info btn-block btn-topic' %></p>
+    <% end %>
   </div>
 
   <div class="p-3">
-    <h4 class="font-italic">Elsewhere</h4>
+    <h2 class="font-italic">Elsewhere</h2>
     <ol class="list-unstyled social-links">
-      <li><a href="#"><%= fa_icon "github" %></a></li>
-      <li><a href="#"><%= fa_icon "facebook" %></a></li>
-      <li><a href="#"><%= fa_icon "twitter" %></a></li>
-      <li><a href="#"><%= fa_icon "instagram" %></a></li>          
-      <li><a href="#"><%= fa_icon "linkedin-square" %></a></li>
+      <li><a href="https://github.com/CintBX" target="_blank"><%= fa_icon "github" %></a></li>
+      <li><a href="https://www.facebook.com/dustin.cintron" target="_blank"><%= fa_icon "facebook" %></a></li>
+      <li><a href="https://www.linkedin.com/in/dustin-cintron-669b9680/" target="_blank"><%= fa_icon "linkedin-square" %></a></li>
     </ol>
   </div>
 </aside>
