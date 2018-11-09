@@ -1,15 +1,27 @@
 <main role="main" class="container">
 	<div class="row">
 	  <div class="col-md-8 blog-main">
-	    
-	    <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
-	    <hr>
 
 	    <h2><%= @blog.title %></h2>
 
+	    <nav aria-label="breadcrumb">
+			  <ol class="breadcrumb">
+			    <li class="breadcrumb-item"><%= link_to 'Blogs', blogs_path %></li>
+			    <li class="breadcrumb-item"><%= link_to @blog.topic.title, topic_path(@blog.topic) %></li>
+			    <li class="breadcrumb-item active" aria-current="page"><%= @blog.title %></li>
+
+			    <li class="ml-auto">
+			    	<%= link_to fa_icon('pencil-square-o'), edit_blog_path(@blog) if logged_in?(:site_admin) %>
+			    	<%= link_to fa_icon('trash'), @blog, method: :delete, data: { confirm: 'Delete this post?' } if logged_in?(:site_admin) %>
+  				</li>	  	
+			  </ol>
+			</nav>
+
+	    <p><%= @blog.topic.title %></p>
+
 	    <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %>
 
-	    <p><%= @blog.body %></p>
+	    <p><%= markdown @blog.body %></p>
 
 	    <%= render 'comments/comment_form' %>
 	    
