@@ -15,11 +15,11 @@ module PortfoliosHelper
 
   def heroku_link
     if @portfolio_item.id === 1
-      link_to image_tag(portfolio_img(@portfolio_item.main_image, 'main'), width: '100%'), "https://dmc-capstone.herokuapp.com/"
+      link_to image_tag(portfolio_img(@portfolio_item.main_image, 'main'), width: '100%'), "https://dmc-capstone.herokuapp.com/", target: '_blank'
     elsif @portfolio_item.id === 2
-      link_to image_tag(portfolio_img(@portfolio_item.main_image, 'main'), width: '100%'), "https://cintron-overtime.herokuapp.com/"
+      link_to image_tag(portfolio_img(@portfolio_item.main_image, 'main'), width: '100%'), "https://cintron-overtime.herokuapp.com/", target: '_blank'
     else
-      link_to image_tag(portfolio_img(@portfolio_item.main_image, 'main'), width: '100%'), "https://cintron-freelance.herokuapp.com/"
+      link_to image_tag(portfolio_img(@portfolio_item.main_image, 'main'), width: '100%'), "https://cintron-freelance.herokuapp.com/", target: '_blank'
     end
   end
 end
