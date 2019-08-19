@@ -12,4 +12,14 @@ module PortfoliosHelper
   		image_generator(height: '600', width: '400')
   	end
 	end
+
+  def heroku_link
+    if @portfolio_item.id === 1
+      "https://dmc-capstone.herokuapp.com/"
+    elsif @portfolio_item.id === 2
+      "https://cintron-overtime.herokuapp.com/"
+    else
+      "https://cintron-freelance.herokuapp.com/"
+    end
+  end
 end
