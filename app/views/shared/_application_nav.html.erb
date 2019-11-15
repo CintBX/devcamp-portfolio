@@ -1,9 +1,23 @@
 <header class="masthead mb-auto">
   <div class="inner">
     <h3 class="masthead-brand element">Dustin Cintron</h3>
-    <nav class="nav nav-masthead navbar-collapse justify-content-center app-nav txt-shadow">
+    <nav class="nav nav-masthead navbar-expand-lg justify-content-center app-nav txt-shadow">
 			<%= nav_helper 'nav-link', 'span' %>
-      <%= login_helper 'nav-link' %>
+			<button 
+				class="navbar-toggler navbar-dark" 
+				type="button" 
+				data-toggle="collapse" 
+				data-target="#navbarTogglerDemo02" 
+				aria-controls="navbarTogglerDemo02" 
+				aria-expanded="false" 
+				aria-label="Toggle navigation"
+			>
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse navbar-nav mr-auto" id="navbarTogglerDemo02">
+	      <%= login_helper 'nav-link' %>
+	    </div>
     </nav>
   </div>
 </header>
