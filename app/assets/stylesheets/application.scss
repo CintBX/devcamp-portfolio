@@ -61,9 +61,7 @@ h6, .h6 {
 
 .masthead {
   margin-bottom: 2rem;
-  width: 55rem;
   position: relative;
-  left: 63px;
 }
 
 .masthead-brand {
@@ -98,6 +96,12 @@ h6, .h6 {
   }
   .nav-masthead {
     float: right;
+  }
+}
+
+@media (max-width: 40em) {
+  .element {
+    display: none;
   }
 }
 
