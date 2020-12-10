@@ -15,13 +15,15 @@ module PortfoliosHelper
 
   def production_link
     if @portfolio_item.title === "Cintron Capstone Project"
-      link_to image_tag(portfolio_img(@portfolio_item.main_image, 'main'), width: '100%'), "https://dmc-capstone.herokuapp.com/", target: '_blank'
-    elsif @portfolio_item.title === "Overtime Application"
+      link_to image_tag(portfolio_img(@portfolio_item.main_image, 'main'), width: '100%'), "https://dmc-capstone.herokuapp.com/", target: '_blank' 
+    elsif @portfolio_item.title === "Overtime Application" 
       link_to image_tag(portfolio_img(@portfolio_item.main_image, 'main'), width: '100%'), "https://cintron-overtime.herokuapp.com/", target: '_blank'
     elsif @portfolio_item.title === "Freelancer Dashboard"
       link_to image_tag(portfolio_img(@portfolio_item.main_image, 'main'), width: '100%'), "https://cintron-freelance.herokuapp.com/", target: '_blank'
+    elsif @portfolio_item.title === "React Phone Store"
+      link_to image_tag(portfolio_img(@portfolio_item.main_image, 'main'), width: '100%'), "https://cintron-react-store.netlify.com/", target: '_blank'
     else
-      link_to image_tag(portfolio_img(@portfolio_item.main_image, 'main'), width: '100%'), "https://cintron-react-store.netlify.com/", target: '_blank'      
+      link_to image_tag(portfolio_img(@portfolio_item.main_image, 'main'), width: '100%'), "https://smash-hosting.herokuapp.com/", target: '_blank'
     end
   end
 end
